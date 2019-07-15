@@ -11,7 +11,7 @@ Get started in 3 steps
 
 ```
 $ npm install serverless -g
-$ serverless create --template-url xxx
+$ serverless create --template-url https://github.com/shogomuranushi/bash-multi-env-for-sls && cd bash-multi-env-for-sls
 $ serverless deploy
 ```
 
