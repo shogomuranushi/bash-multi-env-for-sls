@@ -12,7 +12,7 @@ Get started in 3 steps
 ```
 $ npm install serverless -g
 $ serverless create --template-url https://github.com/shogomuranushi/bash-multi-env-for-sls && cd bash-multi-env-for-sls
-$ serverless deploy
+$ serverless deploy (Option: --stage prod)
 ```
 
 ### How to change the processing content of bash script
@@ -26,8 +26,10 @@ $ serverless deploy
 ### How to change region for each environment
 
 1. Modify ./conf/xxx.yml
+2. Run `serverless deploy --stage prod`
 
 ### How to add items to change for each environment
 
 1. Add ./conf/xxx.yml
 2. Add ${self:custom.env.file.${self:provider.stage}.xxxxxx} to serverless.yml
+3. Run `serverless deploy --stage prod`
